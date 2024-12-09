@@ -2,7 +2,7 @@
 
 function pizzaOrder()
 {
-  echo "Welcome to the Pizza Order System!\n";
+  echo "Welcome to the Pizza Order System!";
 
   // Select size
   while (true) {
@@ -16,7 +16,7 @@ function pizzaOrder()
       $baseCost = 10.00;
       break;
     } else {
-      echo "Invalid input. Please enter 'Large' or 'Extra Large'.\n";
+      echo "Invalid input. Please enter 'Large' or 'Extra Large'.";
     }
   }
 
@@ -25,7 +25,7 @@ function pizzaOrder()
     $toppings = readline("Please select the number of toppings (0, 1, 2, 3, or 4): ");
 
     if (!is_numeric($toppings)) {
-      echo "Error: Please enter a valid number.\n";
+      echo "Error: Please enter a valid number.";
       continue;
     }
 
@@ -60,9 +60,9 @@ function pizzaOrder()
   $totalCost = $subtotal + $tax;
 
   // Display results
-  echo "\nSubtotal: $" . number_format($subtotal, 2) . "\n";
-  echo "HST (13%): $" . number_format($tax, 2) . "\n";
-  echo "Total: $" . number_format($totalCost, 2) . "\n";
+  echo "\nSubtotal: $" . number_format($subtotal, 2).";
+  echo "HST (13%): $" . number_format($tax, 2).";
+  echo "Total: $" . number_format($totalCost, 2)";
 }
 
 pizzaOrder();
